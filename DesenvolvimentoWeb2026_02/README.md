@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/32588326/README.md)
 # Catálogo Urban Wear - Avaliação Prática Web (UNEMAT)
 
 **Estudante:** Pedro Henrique Figueiredo
@@ -29,4 +30,22 @@ Como o projeto utiliza requisições AJAX (`fetch`), ele não pode ser aberto di
 ### Opção 1: Usando Python (Recomendado)
 1. Abra o terminal na pasta raiz do projeto.
 2. Execute o comando:
-   ```bash python -m http.server 8000
+   ```bash
+   python -m http.server 8000
+
+---
+
+## 4. Roteiro de Testes para Avaliação
+- **Testar Listagem Dinâmica e Grid:**
+  - Acesse o sistema e verifique o carregamento automático dos 8 cards de roupas.
+- **Testar Consulta de Detalhes via AJAX:**
+  - Clique no botão "Ver detalhes" em qualquer item.
+  - Observe a Modal abrir exibindo o indicador de carregamento e, logo em seguida, os dados complementares puxados via AJAX.
+- **Testar Busca e Filtro:**
+  - Digite no campo de busca palavras como "Jeans" ou "Algodão".
+  - Altere o select de categoria para "Jaquetas" e valide a filtragem.
+- **Testar Estado Vazio:**
+  - Digite um termo inexistente no campo de busca (ex: "xyz123") para visualizar a mensagem de lista vazia.
+-**Testar Estado de Erro:**
+  - Altere temporariamente o caminho do arquivo no app.js (linha 29) para um nome inexistente (ex: data/produtos_errado.json) e recarregue a página.
+  - Verifique a mensagem de erro e teste o botão "Tentar Novamente".
