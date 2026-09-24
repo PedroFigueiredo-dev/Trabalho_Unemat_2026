@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Wear - Catálogo de Moda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Urban Wear</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#apresentacao">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre o Projeto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow-1">
+
+    <section id="apresentacao" class="bg-primary text-white py-5 text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Coleção Urban Wear 2026</h1>
+        <p class="lead">Estilo, conforto e autenticidade para o seu dia a dia.</p>
+        <a href="#catalogo" class="btn btn-light btn-lg mt-2 fw-semibold">Explorar Catálogo</a>
+      </div>
+    </section>
+
+    <section id="catalogo" class="container py-5">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
+        <h2 class="h3 fw-bold mb-0">Nosso Catálogo</h2>
+        
+        <form id="form-filtros" class="d-flex flex-column flex-sm-row gap-2" onsubmit="return false;">
+          <label for="campo-busca" class="visually-hidden">Buscar produtos</label>
+          <input type="text" id="campo-busca" class="form-control" placeholder="Buscar produto...">
+          
+          <label for="select-categoria" class="visually-hidden">Filtrar por Categoria</label>
+          <select id="select-categoria" class="form-select">
+            <option value="todas">Todas as categorias</option>
+            <option value="camisetas">Camisetas</option>
+            <option value="calcas">Calças</option>
+            <option value="jaquetas">Jaquetas</option>
+            <option value="casacos">Casacos</option>
+          </select>
+        </form>
+      </div>
+
+
+      <div id="loading-state" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Carregando...</span>
+        </div>
+        <p class="mt-2 text-muted fw-medium">Carregando catálogo de roupas...</p>
+      </div>
+
+
+      <div id="error-state" class="alert alert-danger text-center d-none" role="alert">
+        <h3 class="h5 alert-heading fw-bold">Falha ao carregar os dados!</h3>
+        <p class="mb-3">Não foi possível conectar ao servidor de dados. Verifique seu servidor local.</p>
+        <button id="btn-retry" class="btn btn-danger">Tentar Novamente</button>
+      </div>
+
+
+      <div id="empty-state" class="text-center py-5 d-none">
+        <p class="fs-4 text-muted">Nenhum produto encontrado com os filtros aplicados.</p>
+      </div>
+
+
+      <div id="grid-produtos" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 d-none">
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: INFORMAÇÕES DO PROJETO -->
+    <section id="sobre" class="bg-white py-5 border-top">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="h4 fw-bold mb-3">Sobre o Projeto</h2>
+            <p>Este catálogo interativo foi desenvolvido como avaliação prática para a disciplina de <strong>Desenvolvimento Web (UNEMAT)</strong>.</p>
+            <ul class="list-unstyled">
+              <li><strong>Desenvolvedor:</strong> Pedro Henrique Figueiredo</li>
+              <li><strong>Tecnologias:</strong> HTML5 Semântico, CSS3, Bootstrap 5, JavaScript (Fetch API - AJAX).</li>
+              <li><strong>Recursos AJAX:</strong> Consumo assíncrono de arquivos JSON locais para a listagem e para a modal de detalhes individual de produtos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <div class="modal fade" id="modalDetalhes" tabindex="-1" aria-labelledby="modalDetalhesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title h5 fw-bold" id="modalDetalhesLabel">Detalhes do Produto</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body" id="modal-body-content">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3 mt-auto text-center">
+    <div class="container">
+      <small>&copy; 2026 Urban Wear - Todos os direitos reservados. Projeto Acadêmico UNEMAT.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

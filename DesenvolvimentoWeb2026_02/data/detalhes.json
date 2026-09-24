@@ -1,0 +1,50 @@
+{
+  "1": {
+    "material": "100% Algodão Pima",
+    "tamanhos": ["P", "M", "G", "GG"],
+    "cuidados": "Lavar à mão ou máquina no ciclo delicado. Não usar alvejante.",
+    "descricaoCompleta": "Desenvolvida com algodão de alta qualidade, a Camiseta Oversized Streetwear oferece um caimento solto e estruturado, ideal para compor looks urbanos com máximo conforto."
+  },
+  "2": {
+    "material": "100% Jeans Algodão (12 Oz)",
+    "tamanhos": ["M", "G", "GG"],
+    "cuidados": "Lavar do avesso com cores semelhantes.",
+    "descricaoCompleta": "A Jaqueta Jeans Oversized possui costuras reforçadas e botões personalizados em latão antirruste, sendo uma peça coringa para todas as estações."
+  },
+  "3": {
+    "material": "98% Algodão, 2% Elastano",
+    "tamanhos": ["38", "40", "42", "44"],
+    "cuidados": "Secar à sombra.",
+    "descricaoCompleta": "Com modelagem anatômica e 6 bolsos funcionais, a Calça Cargo une estilo utilitário e praticidade para a rotina diária."
+  },
+  "4": {
+    "material": "50% Algodão, 50% Poliéster",
+    "tamanhos": ["P", "M", "G"],
+    "cuidados": "Não passar ferro sobre a estampa/etiqueta.",
+    "descricaoCompleta": "O Moletom Canguru conta com interior flanelado macio, cordões com ponteira metálica e acabamento em ribana nos punhos e barra."
+  },
+  "5": {
+    "material": "55% Linho, 45% Viscose",
+    "tamanhos": ["P", "M", "G", "GG"],
+    "cuidados": "Passar a ferro em temperatura média.",
+    "descricaoCompleta": "Combinação perfeita da sofisticação do linho com a leveza e maciez da viscose, ideal para composições casuais elegantes."
+  },
+  "6": {
+    "material": "99% Algodão, 1% Elastano",
+    "tamanhos": ["38", "40", "42", "44", "46"],
+    "cuidados": "Evitar secadora para preservar o elastano.",
+    "descricaoCompleta": "Modelagem Slim com toque de elastano que garante flexibilidade de movimentos sem perder a estrutura clássica do jeans."
+  },
+  "7": {
+    "material": "100% Poliamida Respirável",
+    "tamanhos": ["P", "M", "G"],
+    "cuidados": "Lavar com sabão neutro.",
+    "descricaoCompleta": "Tecido tecnológico com proteção contra o vento e chuva leve. Possui bolsos laterais com zíper e capuz embutido."
+  },
+  "8": {
+    "material": "80% Poliéster, 20% Viscose (Forro 100% Poliéster)",
+    "tamanhos": ["M", "G"],
+    "cuidados": "Lavagem a seco recomendada.",
+    "descricaoCompleta": "Peça de alfaiataria pesada com abotoamento duplo e forro interno acetinado, proporcionando isolamento térmico impecável."
+  }
+}

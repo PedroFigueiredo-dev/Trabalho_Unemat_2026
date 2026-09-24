@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "titulo": "Camiseta Oversized Streetwear",
+    "categoria": "camisetas",
+    "preco": 89.90,
+    "resumo": "Camiseta 100% algodão com corte oversized e caimento confortável.",
+    "imagem": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500"
+  },
+  {
+    "id": 2,
+    "titulo": "Jaqueta Jeans Oversized",
+    "categoria": "jaquetas",
+    "preco": 249.90,
+    "resumo": "Jaqueta jeans clássica com lavagem moderna e bolsos frontais.",
+    "imagem": "https://images.unsplash.com/photo-1543076447-215ad9ba6923?w=500"
+  },
+  {
+    "id": 3,
+    "titulo": "Calça Cargo Utilitária",
+    "categoria": "calcas",
+    "preco": 179.90,
+    "resumo": "Calça cargo em sarja com múltiplos bolsos e ajuste no tornozelo.",
+    "imagem": "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?w=500"
+  },
+  {
+    "id": 4,
+    "titulo": "Moletom Canguru Basic",
+    "categoria": "casacos",
+    "preco": 159.90,
+    "resumo": "Moletom flanelado com capuz ajustável e bolso frontal estilo canguru.",
+    "imagem": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500"
+  },
+  {
+    "id": 5,
+    "titulo": "Camisa Linho Manga Curta",
+    "categoria": "camisetas",
+    "preco": 129.90,
+    "resumo": "Camisa leve de linho mista, ideal para dias quentes e ocasiões casuais.",
+    "imagem": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500"
+  },
+  {
+    "id": 6,
+    "titulo": "Calça Jeans Slim Fit",
+    "categoria": "calcas",
+    "preco": 169.90,
+    "resumo": "Calça jeans com elastano para maior conforto e ajuste perfeito ao corpo.",
+    "imagem": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500"
+  },
+  {
+    "id": 7,
+    "titulo": "Jaqueta Corta-Vento Sport",
+    "categoria": "jaquetas",
+    "preco": 199.90,
+    "resumo": "Corta-vento impermeável e leve, perfeito para atividades ao ar livre.",
+    "imagem": "https://images.unsplash.com/photo-1548883354-7622d03aca27?w=500"
+  },
+  {
+    "id": 8,
+    "titulo": "Casaco de Lã Batida",
+    "categoria": "casacos",
+    "preco": 329.90,
+    "resumo": "Casaco elegante em lã sintética para dias frios de inverno.",
+    "imagem": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=500"
+  }
+]
